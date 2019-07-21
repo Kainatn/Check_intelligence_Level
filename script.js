@@ -12,7 +12,7 @@ function checkIntelligence() {
      
         let randNum = parseInt(Math.random() * intelligenceLevels.length);
     document.querySelector('h5').innerHTML = name + " " + intelligenceLevels[randNum];
-     document.querySelector('input').value="";
+     document.querySelector('input').value=" ";
     }
     else {
         alert("Enter Your Name");
