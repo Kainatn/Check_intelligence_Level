@@ -9,16 +9,20 @@
 <body>
     
 <center>
-  
+  <form onsubmit="return false;" id="myForm">
     <h2>
     Check Your Intelligence 
     </h2>
     <input type="text" class="filed" id="input">
-    <input type="submit" class="btn "  onclick="checkIntelligence()">
-
+   <button onclick="checkIntelligence()">Check</button> 
+  </form>
     <h5 id="showHere"></h5>
 </center>
 
 </body>
-<script src="script.js"></script>
+<script src="script.js">
+$('#myForm').submit(function() {
+    doSomething();
+});
+</script>
 </html>

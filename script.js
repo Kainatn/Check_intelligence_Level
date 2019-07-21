@@ -7,15 +7,19 @@ let intelligenceLevels = [' You are Annoyed.', '  Youare Loving ', '   You are D
 ];
 function checkIntelligence() {
     let name = document.getElementById("input").value;
-    if (name != false) {
+    
+   if (name != false) {
      
         let randNum = parseInt(Math.random() * intelligenceLevels.length);
-       document.querySelector('h5').innerHTML = name + " " + intelligenceLevels[randNum];
+    document.querySelector('h5').innerHTML = name + " " + intelligenceLevels[randNum];
+     document.querySelector('input').value="";
     }
     else {
         alert("Enter Your Name");
         return false;
     }
+   
+   
 }
 // let user = name.toUpperCase();
 // let res = user.charAt(0);
@@ -55,7 +59,7 @@ function checkIntelligence() {
         // }
         // else if (res == "U" || res=="T") {
         //     //res="SISTER";
-        //        document.querySelector("h5").innerHTML =  name +'  You are Rude  Person';
+        //       document.querySelector("h5").innerHTML =  name +'  You are Rude  Person';
         //         document.querySelector("h5").style.color = 'violet';
         // }
         // else if (res == "K" || res=="L") {
